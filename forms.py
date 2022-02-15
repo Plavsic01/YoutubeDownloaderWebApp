@@ -5,7 +5,7 @@ from wtforms.validators import DataRequired
 class DownloadForm(Form):
     url = StringField(
         label="Url:",
-        default="Enter URL:",
+        default="",
         validators=[DataRequired()]
     )
 
