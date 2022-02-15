@@ -6,7 +6,8 @@ class DownloadForm(Form):
     url = StringField(
         label="Url:",
         default="",
-        validators=[DataRequired()]
+        validators=[DataRequired(),],
+        render_kw={"placeholder": "Enter URL:"}
     )
 
     submit = SubmitField("Download")
