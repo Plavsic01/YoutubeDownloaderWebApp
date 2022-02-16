@@ -1,3 +1,4 @@
+from pickle import TRUE
 from flask import Flask, redirect,render_template,request,send_file
 from forms import DownloadForm
 from yt_download import download
@@ -20,7 +21,10 @@ def home():
 def how_to():
     return render_template("howto.html")
 
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template("error_505.html")
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
 

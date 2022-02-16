@@ -1,5 +1,17 @@
+.navbar-custom{
+    background-color:#6c63ff;
+}
+
+.color-custom{
+    color:white;
+}
+
+.color-custom:hover{
+    color: whitesmoke;
+}
+
 body {
-    background: #d1d5db
+    background-color: #ffffff;
 }
 
 .height {
@@ -46,6 +58,8 @@ body {
 
 #submit{
     margin-top:20px;
+    color:black;
+    background-color: white;
 }
 
 .info{
